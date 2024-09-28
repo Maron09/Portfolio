@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Chimaroke Onyebi</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Chimaroke Onyebi</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section_container" id="profile">
+        <div class="section_pic_container">
+            <img src="./assests/profile-pic.jpg" loading="lazy" alt="profile-pic" class="img_1">
+        </div>
+
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Chimaroke Onyebi</h1>
+            <p class="section_text_p2">Backend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assests/CHIMAROKE_ONYEBI.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact </button>
+            </div>
+
+            <div id="socials_container">
+                <img src="./assests/linkedin.png" alt="linkedin-profile" class="icon" onclick="location.href='https://www.linkedin.com/in/chimaroke-onyebi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'" loading="lazy">
+                <img src="./assests/github.png" alt="github" class="icon" onclick="location.href='https://www.github.com/maron09'" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section_text_p1">Get to Know More</p>
+        <h1 class="title">About</h1>
+        <div class="section_container">
+            <div class="section_pic_container">
+                <img src="/assests/about-pic.jpg" loading="lazy" alt="profile-pic" class="about_pic">
+            </div>
+            <div class="about_details_container">
+                <div class="about_containers">
+                    <div class="details_container">
+                        <img src="/assests/experience.png" alt="experience_icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ Years <br>Backend Development</p>
+                    </div>
+                    <div class="details_container">
+                        <img src="/assests/education.png" alt="experience_icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Tech. Bacherlors Degree <br>Statistics</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    <p>I am a backend developer with extensive experience in Python frameworks and Golang, building robust and efficient backend systems. My work as a data engineer involves utilizing PySpark to process and analyze large datasets, turning complex data challenges into actionable insights. I enjoy finding creative solutions through code and continuously expanding my skill set. Outside of my professional life, I have a love for cooking and enjoy taking long walks, which help me relax and spark fresh ideas for my projects.</p>
+                </div>
+            </div>
+        </div>
+        <img src="/assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'" loading="lazy">
+    </section>
+
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience_details_container">
+            <div class="about_containers">
+                <div class="details_container">
+                    <h2 class="experience_subtitle">Frontend Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details_container">
+                    <h2 class="experience_subtitle">Backend Development</h2>
+                    <div class="article_container">
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>Django</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>FastAPI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>Flask</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>Golang</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article> 
+                        <article>
+                            <img src="/assests/checkmark.png" alt="experience icon" class="icon" loading="lazy">
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="/assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'" loading="lazy">
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience_details_container">
+            <div class="about_containers project_set">
+                <div class="details_container color_container">
+                    <div class="article_container">
+                        <img src="/assests/project-1.png" alt="project-1" class="project_img" loading="lazy">
+                    </div>
+                    <h2 class="experience_subtitle project_title">FoodieHub</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Maron09/FoodieHub'">Github</button>
+                    </div>
+                </div>
+                <div class="details_container color_container">
+                    <div class="article_container">
+                        <img src="/assests/project-2.png" alt="project-1" class="project_img" loading="lazy">
+                    </div>
+                    <h2 class="experience_subtitle project_title">Study Academy</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Maron09/study-academy'">Github</button>
+                    </div>
+                </div>
+                <div class="details_container color_container">
+                    <div class="article_container">
+                        <img src="/assests/project-3.png" alt="project-1" class="project_img" loading="lazy">
+                    </div>
+                    <h2 class="experience_subtitle project_title">Instagram API</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Maron09/instagram-API'">Github</button>
+                    </div>
+                </div>
+            <!-- Add more -->
+            </div>
+        </div>
+        <img src="/assests/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'" loading="lazy">
+    </section>
+
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact_info_upper_container">
+            <div class="contact_info_container">
+                <img src="/assests/email.png" alt="email icon" class="icon contact_icon email_icon" loading="lazy">
+                <p><a href="mailto:chimarokeonyebi@gmail.com">chimarokeonyebi@gmail.com</a></p>
+            </div>
+            <div class="contact_info_container">
+                <img src="/assests/linkedin.png" alt="linkedin icon" class="icon contact_icon" loading="lazy">
+                <p><a href="https://www.linkedin.com/in/chimaroke-onyebi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>
+            Copyright &#169; 2024 Chimaroke Onyebi. All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
